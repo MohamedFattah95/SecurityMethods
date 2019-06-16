@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".AffineActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="MSG" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/enter_message"
+            android:inputType="textCapCharacters"
+            android:textColor="@android:color/white"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etKey"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/enter_key"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etM"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/m"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/alpha"
+        android:inputType="textCapCharacters"
+        android:textColor="@android:color/white"
+        tools:ignore="Autofill" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDecrypt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_key"
+            android:paddingStart="8dp"
+            android:text="@string/decrypt"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btnEncrypt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_lock"
+            android:paddingStart="8dp"
+            android:text="@string/encrypt"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+
+    </LinearLayout>
+</LinearLayout>

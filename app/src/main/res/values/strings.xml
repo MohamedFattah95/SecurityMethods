@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Security Methods</string>
+    <string name="transposition">Transposition</string>
+    <string name="affine">Affine</string>
+    <string name="rsa">RSA</string>
+    <string name="logo">logo</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="enter_message">Enter a text</string>
+    <string name="enter_key">Key</string>
+    <string name="m">M</string>
+    <string name="p">P</string>
+    <string name="q">Q</string>
+    <string name="ceaser">Ceaser</string>
+    <string name="poly">Poly Alphabetic</string>
+    <string name="jeff">Jefferson</string>
+    <string name="e">E</string>
+    <string name="n">N</string>
+    <string name="alpha">Alphabets</string>
+</resources>

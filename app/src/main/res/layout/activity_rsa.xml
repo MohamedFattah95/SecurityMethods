@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".RSAActivity">
+
+    <TextView
+        android:id="@+id/tvResult1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="MSG" />
+
+    <EditText
+        android:id="@+id/etText1"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/enter_message"
+        android:inputType="textCapCharacters"
+        android:textColor="@android:color/white"
+        tools:ignore="Autofill" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etP1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/p"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etQ1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/q"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etE1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/e"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDecrypt1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_key"
+            android:paddingStart="8dp"
+            android:text="@string/decrypt"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btnEncrypt1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_lock"
+            android:paddingStart="8dp"
+            android:text="@string/encrypt"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="MSG" />
+
+    <EditText
+        android:id="@+id/etText2"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/enter_message"
+        android:inputType="textCapCharacters"
+        android:textColor="@android:color/white"
+        tools:ignore="Autofill" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etP2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/p"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etQ2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/q"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etE2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:hint="@string/e"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            tools:ignore="Autofill" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDecrypt2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_key"
+            android:paddingStart="8dp"
+            android:text="@string/decrypt"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btnEncrypt2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_lock"
+            android:paddingStart="8dp"
+            android:text="@string/encrypt"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+
+    </LinearLayout>
+
+</LinearLayout>

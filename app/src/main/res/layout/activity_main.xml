@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="72dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/ic_security_orange" />
+
+        <Button
+            android:id="@+id/btnTransposition"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_security"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/transposition"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnAffine"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_security"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/affine"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnRSA"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_security"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/rsa"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnCeaser"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_security"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/ceaser"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnPolyAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_security"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/poly"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnJeff"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_security"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/jeff"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</RelativeLayout>
